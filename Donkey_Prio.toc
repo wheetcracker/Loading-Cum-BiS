@@ -1,0 +1,9 @@
+## Interface: 11303
+## Title: Donkey Brains Loot Priority
+## Notes: I made this (:
+## Author: Toxictelum
+## Version: 1.2.0
+
+loot_table.lua
+main_functions.lua
+loot_prio_hook.lua
