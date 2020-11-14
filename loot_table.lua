@@ -187,7 +187,7 @@ Donkey_loot_table = {
 {["loot_id"] = "23033", ["loot_name"] = "Icy Scale Coif", ["prio"] = "Frost Resist",},
 {["loot_id"] = "22967", ["loot_name"] = "Icy Scale Spaulders", ["prio"] = "Frost Resist",},
 {["loot_id"] = "21232", ["loot_name"] = "Imperial Qiraji Armaments", ["prio"] = "Dagger Rogue, 1H Fury Warrior (Orc) > Prot Warrior",},
-{["loot_id"] = "21237", ["loot_name"] = "Imperial Qiraji Regalia", ["prio"] = " Feral > Casters (Staff)",},
+{["loot_id"] = "21237", ["loot_name"] = "Imperial Qiraji Regalia", ["prio"] = "Feral > Casters (Staff)",},
 {["loot_id"] = "23570", ["loot_name"] = "Jom Gabbar", ["prio"] = "Rogue, Hunter > Fury Warrior",},
 {["loot_id"] = "22802", ["loot_name"] = "Kingsfall", ["prio"] = "Dagger Rogue > Hunter",},
 {["loot_id"] = "22954", ["loot_name"] = "Kiss of the Spider", ["prio"] = "Rogue, Fury Warrior",},
