@@ -87,7 +87,7 @@ Donkey_loot_table = {
 {["loot_id"] = "23075", ["loot_name"] = "Death's Bargain", ["prio"] = "Resto Shaman",},
 {["loot_id"] = "21126", ["loot_name"] = "Death's Sting", ["prio"] = "Dagger Rogue > Prot Warrior (no TF)",},
 {["loot_id"] = "22370", ["loot_name"] = "Desecrated Belt", ["prio"] = "None",},
-{["loot_id"] = "22369", ["loot_name"] = "Desecrated Bindings", ["prio"] = "Warlock > Resto Druid > Mage",},
+{["loot_id"] = "22369", ["loot_name"] = "Desecrated Bindings", ["prio"] = "None",},
 {["loot_id"] = "22365", ["loot_name"] = "Desecrated Boots", ["prio"] = "None",},
 {["loot_id"] = "22355", ["loot_name"] = "Desecrated Bracers", ["prio"] = "Prot Warrior, Rogue",},
 {["loot_id"] = "22349", ["loot_name"] = "Desecrated Breastplate", ["prio"] = "Prot Warrior, Rogue",},
