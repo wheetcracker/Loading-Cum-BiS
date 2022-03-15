@@ -1,4 +1,4 @@
-BINDING_HEADER_DKP = "Donkey Prio";
+BINDING_HEADER_DKP = "Loading Cum BiS";
 
 GameTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
   local itemname, itemlink = tooltip:GetItem()
@@ -11,13 +11,13 @@ GameTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
  
   if priority then
     prio = string.format(" %s", priority)
-    splitprio = split(prio, ">")
+    splitprio = split(prio, ",")
 
     tooltip:AddLine(" ")
-    tooltip:AddLine("<Donkey Brains> Priority:", 1, 0, 0.5)
+    tooltip:AddLine("Team Cum BiS:", 1, 0, 0.5)
 
     for index, prioLevel in pairs(splitprio) do 
-      line = index .. ". " .. prioLevel
+      line = " " .. prioLevel
       tooltip:AddLine(line, 1, 0, 0.5, true)
     end
   
@@ -34,13 +34,13 @@ ItemRefTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)local itemna
   
   if priority then
     prio = string.format(" %s", priority)
-    splitprio = split(prio, ">")
+    splitprio = split(prio, ",")
 
     tooltip:AddLine(" ")
-    tooltip:AddLine("<Donkey Brains> Priority:", 1, 0, 0.5)
+    tooltip:AddLine("Team Cum BiS:", 1, 0, 0.5)
 
     for index, prioLevel in pairs(splitprio) do 
-      line = index .. ". " .. prioLevel
+      line = " " .. prioLevel
       tooltip:AddLine(line, 1, 0, 0.5, true)
     end
 	
