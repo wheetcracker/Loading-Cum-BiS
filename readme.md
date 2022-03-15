@@ -1,4 +1,4 @@
-# <Loading> BiS lists for Team Cum
+# \<Loading\> BiS lists for Team Cum
 
 Adds the names of people who have an item on their BiS list to the tooltips of items.
 
