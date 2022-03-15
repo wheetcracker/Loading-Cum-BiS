@@ -1,6 +1,6 @@
 ## Interface: 20503
-## Title: Loading BiS, cum edition
-## Notes: i stole this (:
+## Title: Loading BiS, pirates edition
+## Notes: i stole this from someone that stole it too
 ## Author: jiffy
 ## Version: 1.3.0
 
