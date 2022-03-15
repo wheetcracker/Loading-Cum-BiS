@@ -5,7 +5,7 @@ GameTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
   
   if itemlink then
 
-	priority = search_table(itemlink:match("item:(%d+):"))
+	priority = cum_search_table(itemlink:match("item:(%d+):"))
   
   end
  
@@ -28,7 +28,7 @@ ItemRefTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)local itemna
   
   if itemlink then
 
-	priority = search_table(itemlink:match("item:(%d+):"))
+	priority = cum_search_table(itemlink:match("item:(%d+):"))
 
   end
   
