@@ -4,6 +4,6 @@
 ## Author: jiffy
 ## Version: 1.3.0
 
-cum_loot_table.lua
-cum_main_functions.lua
-cum_loot_prio_hook.lua
+pirate_loot_table.lua
+pirate_main_functions.lua
+pirate_loot_prio_hook.lua

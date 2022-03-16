@@ -1,11 +1,11 @@
-BINDING_HEADER_DKP = "Loading Cum BiS";
+BINDING_HEADER_DKP = "Loading Pirate BiS";
 
 GameTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
   local itemname, itemlink = tooltip:GetItem()
   
   if itemlink then
 
-	priority = cum_search_table(itemlink:match("item:(%d+):"))
+	priority = pirate_search_table(itemlink:match("item:(%d+):"))
   
   end
  
@@ -14,7 +14,7 @@ GameTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
     splitprio = split(prio, ",")
 
     tooltip:AddLine(" ")
-    tooltip:AddLine("Team Cum BiS:", 1, 0, 0.5)
+    tooltip:AddLine("Team Pirate BiS:", 1, 0, 0.5)
 
     for index, prioLevel in pairs(splitprio) do 
       line = " " .. prioLevel
@@ -28,7 +28,7 @@ ItemRefTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)local itemna
   
   if itemlink then
 
-	priority = cum_search_table(itemlink:match("item:(%d+):"))
+	priority = pirate_search_table(itemlink:match("item:(%d+):"))
 
   end
   
@@ -37,7 +37,7 @@ ItemRefTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)local itemna
     splitprio = split(prio, ",")
 
     tooltip:AddLine(" ")
-    tooltip:AddLine("Team Cum BiS:", 1, 0, 0.5)
+    tooltip:AddLine("Team Pirate BiS:", 1, 0, 0.5)
 
     for index, prioLevel in pairs(splitprio) do 
       line = " " .. prioLevel
