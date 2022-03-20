@@ -14,7 +14,7 @@ GameTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
     splitprio = split(prio, ",")
 
     tooltip:AddLine(" ")
-    tooltip:AddLine("Team Pirate BiS:", 1, 0, 0.5)
+    tooltip:AddLine("Team Pirates BiS:", 1, 0, 0.5)
 
     for index, prioLevel in pairs(splitprio) do 
       line = " " .. prioLevel
@@ -37,7 +37,7 @@ ItemRefTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)local itemna
     splitprio = split(prio, ",")
 
     tooltip:AddLine(" ")
-    tooltip:AddLine("Team Pirate BiS:", 1, 0, 0.5)
+    tooltip:AddLine("Team Pirates BiS:", 1, 0, 0.5)
 
     for index, prioLevel in pairs(splitprio) do 
       line = " " .. prioLevel
