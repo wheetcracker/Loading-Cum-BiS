@@ -1,3 +1,4 @@
+Loading_bis_table = {
 {["loot_id"] = "32235", ["loot_name"] = "Cursed Vision of Sargeras", ["prio"] = "Taghan, DontTargetMe, Huntercrow, Buckkethead, Berggen",},
 {["loot_id"] = "32260", ["loot_name"] = "Choker of Endless Nightmares", ["prio"] = "Taghan",},
 {["loot_id"] = "31102", ["loot_name"] = "Pauldrons of the Forgotten Vanquisher", ["prio"] = "Taghan",},
@@ -186,3 +187,4 @@
 {["loot_id"] = "31089", ["loot_name"] = "Chestguard of the Forgotten Conqueror", ["prio"] = "Othercyde",},
 {["loot_id"] = "32256", ["loot_name"] = "Waistwrap of Infinity", ["prio"] = "Othercyde",},
 {["loot_id"] = "30916", ["loot_name"] = "Leggings of Channeled Elements", ["prio"] = "Othercyde",},
+}

@@ -68,8 +68,10 @@ def importList(filename):
 
 def writeLua():
     output = open('pirate_loot_table.lua', 'w')
+    output.write('Loading_bis_table = {\n')
     for k,v in glob_gear_dict.items():
         output.write('{{["loot_id"] = "{0}", ["loot_name"] = "{1}", ["prio"] = "{2}",}},\n'.format(v['loot_id'],v['loot_name'],', '.join(v['prio'])))
+    output.write('}\n')
     output.close()
 
 def tokenReplace(char_dict,item,slot):
