@@ -1,4 +1,4 @@
-BINDING_HEADER_DKP = "Loading Pirate BiS";
+BINDING_HEADER_DKP = "Loading Pirates BiS";
 
 GameTooltip:HookScript("OnTooltipSetItem", function(tooltip, ...)
   local itemname, itemlink = tooltip:GetItem()
