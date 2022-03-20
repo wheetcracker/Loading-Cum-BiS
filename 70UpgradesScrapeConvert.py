@@ -1,3 +1,4 @@
+import sys
 import json
 import chromedriver_binary
 from selenium import webdriver
@@ -6,8 +7,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-url = "https://seventyupgrades.com/set/sEiWdfK4Z3PAfxBhVaq3dM"
-filename = 'list.txt'
 glob_gear_dict = {}
 
 def getBisList(url):
@@ -179,7 +178,7 @@ def tokenReplace(char_dict,item,slot):
                 token_id = '34858'
     return token_name,token_id
 
-lines = importList(filename)
+lines = importList(sys.argv[1])
 for line in lines:
     json_blob = getBisList(line)
     char_dict = jsonParse(json_blob)
