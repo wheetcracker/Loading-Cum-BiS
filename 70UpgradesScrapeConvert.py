@@ -40,18 +40,17 @@ def jsonParse(json_blob):
         
 def dictCreate(char_dict):
     for item in char_dict['items']:
-#        token_name,token_id = tokenReplace(char_dict,item[1],item[2])
-#        if token_name:
-#            if not token_id in glob_gear_dict.keys():
-#                glob_gear_dict[item[0]] = {}
-#                glob_gear_dict[item[0]]['loot_id'] = token_id
-#                glob_gear_dict[item[0]]['loot_name'] = token_name
-#                glob_gear_dict[item[0]]['prio'] = []
-#                glob_gear_dict[item[0]]['prio'].append(char_dict['char'])
-#            else:
-#                glob_gear_dict[item[0]]['prio'].append(char_dict['char'])
-#        elif not item[0] in glob_gear_dict.keys():
-        if not item[0] in glob_gear_dict.keys():
+        token_name,token_id = tokenReplace(char_dict,item[1],item[2])
+        if token_name:
+            if not token_id in glob_gear_dict.keys():
+                glob_gear_dict[token_id] = {}
+                glob_gear_dict[token_id]['loot_id'] = token_id
+                glob_gear_dict[token_id]['loot_name'] = token_name
+                glob_gear_dict[token_id]['prio'] = []
+                glob_gear_dict[token_id]['prio'].append(char_dict['char'])
+            else:
+                glob_gear_dict[token_id]['prio'].append(char_dict['char'])
+        elif not item[0] in glob_gear_dict.keys():
             glob_gear_dict[item[0]] = {}
             glob_gear_dict[item[0]]['loot_id'] = item[0]
             glob_gear_dict[item[0]]['loot_name'] = item[1]
@@ -59,6 +58,7 @@ def dictCreate(char_dict):
             glob_gear_dict[item[0]]['prio'].append(char_dict['char'])
         else:
             glob_gear_dict[item[0]]['prio'].append(char_dict['char'])
+
 
 def importList(filename):
     linklist = open(filename, 'r')
