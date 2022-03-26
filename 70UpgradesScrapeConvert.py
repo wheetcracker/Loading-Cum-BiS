@@ -1,6 +1,8 @@
+import csv
 import sys
 import json
 import chromedriver_binary
+from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -59,6 +61,36 @@ def dictCreate(char_dict):
         else:
             glob_gear_dict[item[0]]['prio'].append(char_dict['char'])
 
+def csvCreate(char_dict):
+    column = ['','Head','Neck','Shoulders','Chest','Waist','Legs','Feet','Wrists','Hands','Finger 1','Finger 2','Trinket 1','Trinket 2','Back','Mainhand','Offhand','Ranged']
+    collist = []
+    gearcsv = Path('./gearlist.csv')
+    if not gearcsv.is_file():
+        with open('gearlist.csv', 'a+') as csvFile:
+            wr = csv.writer(csvFile)
+            wr.writerow(column)
+            collist.append(char_dict['char'])
+            for item in char_dict['items']:
+                if not (('SHIRT' in item[2]) or ('TABARD' in item[2])):
+                    collist.append(item[1])
+            if len(collist) == 17:
+                ranged = collist.pop()
+                collist.append('')
+                collist.append(ranged)
+            wr.writerow(collist)
+    else:
+        with open('gearlist.csv', 'a') as csvFile:
+            wr = csv.writer(csvFile)
+            collist.append(char_dict['char'])
+            for item in char_dict['items']:
+                if not (('SHIRT' in item[2]) or ('TABARD' in item[2])):
+                    collist.append(item[1])
+            if len(collist) == 17:
+                ranged = collist.pop()
+                collist.append('')
+                collist.append(ranged)
+            wr.writerow(collist)
+    csvFile.close()
 
 def importList(filename):
     linklist = open(filename, 'r')
@@ -183,4 +215,5 @@ for line in lines:
     json_blob = getBisList(line)
     char_dict = jsonParse(json_blob)
     dictCreate(char_dict)
+    csvCreate(char_dict)
 writeLua()
