@@ -1,4 +1,4 @@
-## Interface: 20503
+## Interface: 20504
 ## Title: Loading BiS, pirates edition
 ## Notes: i stole this from someone that stole it too
 ## Author: dommymommy
