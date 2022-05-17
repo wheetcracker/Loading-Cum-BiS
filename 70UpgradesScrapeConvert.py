@@ -130,7 +130,7 @@ def tokenReplace(char_dict,item,slot):
             elif slot == 'WAIST':
                 token_name = 'Belt' + suffix
                 token_id = '34853'
-            elif slot == 'WRIST':
+            elif slot == 'WRISTS':
                 token_name = 'Bracers' + suffix
                 token_id = '34848'
             elif slot == 'FEET':
@@ -157,7 +157,7 @@ def tokenReplace(char_dict,item,slot):
             elif slot == 'WAIST':
                 token_name = 'Belt' + suffix
                 token_id = '34854'
-            elif slot == 'WRIST':
+            elif slot == 'WRISTS':
                 token_name = 'Bracers' + suffix
                 token_id = '34851'
             elif slot == 'FEET':
@@ -202,7 +202,7 @@ def tokenReplace(char_dict,item,slot):
             elif slot == 'WAIST':
                 token_name = 'Belt' + suffix
                 token_id = '34855'
-            elif slot == 'WRIST':
+            elif slot == 'WRISTS':
                 token_name = 'Bracers' + suffix
                 token_id = '34852'
             elif slot == 'FEET':
