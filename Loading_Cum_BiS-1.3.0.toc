@@ -1,8 +1,8 @@
-## Interface: 20503
+## Interface: 20505
 ## Title: Loading BiS, cum edition
 ## Notes: i stole this (:
 ## Author: jiffy
-## Version: 1.3.0
+## Version: 1.3.5
 
 cum_loot_table.lua
 cum_main_functions.lua
