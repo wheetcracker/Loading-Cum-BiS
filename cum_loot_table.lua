@@ -1,5 +1,4 @@
 Loading_bis_table = {
-Loading_bis_table = {
 {["loot_id"] = "34245", ["loot_name"] = "Cover of Ursol the Wise", ["prio"] = "Amoxichillin",},
 {["loot_id"] = "33281", ["loot_name"] = "Brooch of Nature's Mercy", ["prio"] = "Amoxichillin, Kronkey, Saasuntwo, hashmeer",},
 {["loot_id"] = "34209", ["loot_name"] = "Spaulders of Reclamation", ["prio"] = "Amoxichillin",},
